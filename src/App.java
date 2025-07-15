@@ -1,5 +1,6 @@
 import java.util.List;
 
+import controllers.LibroController;
 import models.Book;
 
 public class App {
@@ -31,5 +32,9 @@ public class App {
                 new Book("Ciberseguridad", "Pedro León", 2023),
                 new Book("Blockchain", "Marta Ríos", 2021),
                 new Book("Machine Learning", "Cristina Gómez", 2022));
+        LibroController lC = new LibroController();
+        System.out.println("Brandon Collaguazo");
+        System.out.println("Libros: ");
+        System.out.println(lC.procesarLibros(libros));
     }
 }
